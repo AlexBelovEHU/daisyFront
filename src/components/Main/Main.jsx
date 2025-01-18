@@ -35,10 +35,10 @@ const Main = ({
           <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             {!isLoggedIn ? (
               <>
-                <div onClick={showLogin} style={{ backgroundColor: '#3E28E8', borderRadius: '50px', display: 'flex', fontSize: '16px', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: 'white' }}>{t("main.startanboxing")}</div>
-                <div onClick={() => howItWorksRef.current.scrollIntoView()} style={{ backgroundColor: 'transparent', fontSize: '16px', borderRadius: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: '#3E28E8', border: '1px solid #3E28E8' }}>{t('main.howitworks')}</div>
+                <div onClick={showLogin} style={{ backgroundColor: '#03b7ff', borderRadius: '50px', display: 'flex', fontSize: '16px', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: 'white' }}>{t("main.startanboxing")}</div>
+                <div onClick={() => howItWorksRef.current.scrollIntoView()} style={{ backgroundColor: 'transparent', fontSize: '16px', borderRadius: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: '#03b7ff', border: '1px solid #03b7ff' }}>{t('main.howitworks')}</div>
               </>) : (<>
-                <div className={styles.addCredit} onClick={showDP} style={{ backgroundColor: '#3E28E8', borderRadius: '50px', textAlign: 'center', padding: '1vw 10vw', margin: '2vw 2vw', color: 'white' }}>{t("main.addcredits")}</div>
+                <div className={styles.addCredit} onClick={showDP} style={{ backgroundColor: '#03b7ff', borderRadius: '50px', textAlign: 'center', padding: '1vw 10vw', margin: '2vw 2vw', color: 'white' }}>{t("main.addcredits")}</div>
               </>)}
 
           </div>
@@ -61,7 +61,7 @@ const Main = ({
                   }}>
                     <div
                       style={{
-                        backgroundColor: "#FFC658",
+                        backgroundColor: "#73ffdc",
                         borderRadius: "50px",
                         padding: "5px",
                         fontWeight: "bold",
@@ -71,7 +71,7 @@ const Main = ({
                         height: "fit-content",
                       }}
                     >
-                      {t('main.openfor')} {item.price}
+                      {t('main.openfor')}
                     </div>
                   </div>
                 </div>
@@ -130,29 +130,11 @@ const Main = ({
             </div>
           </div>
           <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div onClick={isLoggedIn?(showDP):(showLogin)} style={{ backgroundColor: '#3E28E8', borderRadius: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '280px', height: '41px', color: 'white' }}>{t('main.startanboxing')}</div>
+            <div onClick={isLoggedIn?(showDP):(showLogin)} style={{ backgroundColor: '#03b7ff', borderRadius: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '280px', height: '41px', color: 'white' }}>{t('main.startanboxing')}</div>
           </div>
-          <div className={styles.hiwinner}>
-            <div className={styles.hiwbottom}>
-              <div style={{ alignItems: 'center' }} className={styles.eehiw}>
-                <h2 style={{ textAlign: 'center' }} className={styles.hiwheader}>{t("main.provablyfair")}</h2>
-                <p style={{ textAlign: 'center' }} className={styles.hiwtext}>
-                  {t("main.oursystem")}
-                </p>
-              </div>
-            </div>
-            <div className={styles.hiwbottom}>
-              <div style={{ alignItems: 'center' }} className={styles.eehiw}>
-                <h2 style={{ textAlign: 'center' }} className={styles.hiwheader}>{t("main.authenticitems")}</h2>
-                <p style={{ textAlign: 'center' }} className={styles.hiwtext}>
-                  {t("main.everyitem")}
-                </p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
-      <Cryptoicons></Cryptoicons>
     </>
   )
 };

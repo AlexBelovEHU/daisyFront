@@ -62,7 +62,6 @@ const AllBoxes = ({
                       }}
                     >
                       {t("allboxes.openfor")}
-                      {item.price}
                     </div>
                   </div>
                 </div>

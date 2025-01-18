@@ -1,21 +1,21 @@
 {
   "liveanbox":{
-    "title":"Live Anbox"
+    "title":"Your Ad"
   },
   "main":{
     "startanboxing":"Start Unboxing",
     "howitworks":"How it works",
     "addcredits":"Add credits",
-    "openfor":"Open for ",
+    "openfor":"Open",
     "showmore":"Show more",
     "signup":"Sign up",
     "joinvia":"Join via Google or sign up with your email to start unboxing awesome mystery boxes on Anboxme.",
-    "topup":"Top Up Your Account",
-    "easilytopup":"Easily top up your balance by clicking the \"+\" button in the top menu.",
-    "anboxmystery":"Unbox Mystery Boxes",
-    "pickabox":"Pick a box and unbox it with one click. We guarantee the authenticity of all items.",
-    "shiporswap":"Ship or Swap Items",
-    "notwhatyouwanted":"Not what you wanted? No problem! Ship it to your home or exchange it for on-site credit and keep exploring.",
+    "topup":"Find offers",
+    "easilytopup":"Easily find good deals with search",
+    "anboxmystery":"Visit partner website",
+    "pickabox":"Found a great offer? Use our redirect button to visit offical offer' vebsite",
+    "shiporswap":"Hooray!",
+    "notwhatyouwanted":"We are lloking forward to your next visits",
     "provablyfair":"Provably Fair Technology Guarantees 100% Fairness",
     "oursystem":"Our system ensures full transparency, with no possibility of manipulation in any mystery box draw.",
     "authenticitems":"100% Authentic Items Guaranteed",
@@ -25,7 +25,7 @@
   "allboxes":{
     "allboxes":"All featured luxury boxes",
     "startanboxing":"Start Unboxing",
-    "openfor":"Open for ",
+    "openfor":"Open",
     "showmore":"Show more",
     "signup":"Sign up",
     "joinvia":"Join via Google or sign up with your email to start unboxing awesome mystery boxes on Anboxme.",
@@ -70,13 +70,13 @@
   "bp":{
     "roulettebelow":"Roulette below will show you what you got after opening the box",
     "back":"← Back",
-    "openfor":"Open for",
+    "openfor":"Go to offer",
     "free":"Free",
-    "tryforfree":"Try for free",
     "productsinside":"Products inside the box",
     "retail":"Retail",
     "getfor":"Get for",
-    "recommended":"Recommended boxes"
+    "seeoffer":"See offer",
+    "recommended":"Recommended offers"
   },
   "ft":{
     "openour":"Open our provably fair mystery boxes and have your unboxed products shipped to your doorstep",

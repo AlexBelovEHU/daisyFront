@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Banner.module.css";
-import newBanner from "../../assets/newBanner.svg";
-import bannerRus from '../../assets/bannerRus.png'
+import newBanner from "../../assets/meds.jpg";
+import bannerRus from '../../assets/meds.jpg'
 
 const banners = {'en':newBanner,'ru':bannerRus};
 const headers = [

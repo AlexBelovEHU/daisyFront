@@ -45,18 +45,18 @@
 height: 35px;
 width:140px;
     background-color: transparent;
-    border: 1px solid #3E28E8;
+    border: 1px solid #1752b0;
     display: flex;
     justify-content: center;
     align-items: center ;
-    color: #3E28E8;
+    color: #1752b0;
     border-radius: 50px;
 }
 #signup {
     height: 35px;
     width:140px;
-        background-color: #3E28E8;
-        border:2px solid #3E28E8;
+        background-color: #1752b0;
+        border:2px solid #1752b0;
         display: flex;
         justify-content: center;
         align-items: center ;
@@ -106,7 +106,7 @@ width:140px;
     }
   }
 #plus{
-    background-color: #3E28E8;
+    background-color: #1752b0;
     border-radius: 50px;
     color:white;
     font-size:23px;

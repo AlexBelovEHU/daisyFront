@@ -375,9 +375,7 @@ const CaseScroll = ({
               onClick={
                 isLoggedIn
                   ? () => {
-                      setIsPlayerBroke(false);
-                      setShowOBP(false);
-                      startScrolling(false)
+                      window.location.href='https://www.meds.lt/'
                     }
                   : toggleLP
               }
@@ -402,51 +400,10 @@ const CaseScroll = ({
           >
             {t("bp.back")}
           </a>
-          <p id="BoxopenpagePrompt">
-            {t("bp.roulettebelow")}
-          </p>
         </div>
         <div
           style={{ position: "relative", display: "grid", marginTop: "20px" }}
         >
-          <div id="purple-arrows">
-            <img style={{ height: "100%" }} src={purpleArrows}></img>
-          </div>
-          <div className="gray-bg">
-            <div className="white-bg">
-              <div
-                className="case-scroll-container"
-                style={{
-                  transform: `translateX(-${
-                    (position * 100) / subdivisions / items.length
-                  }%)`,
-                  transition: `transform ${speed}ms ${
-                    distance <= 4 ? "linear" : "linear"
-                  }`,
-                }}
-              >
-                {items.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`item ${item.rarity} ${
-                      index ===
-                      Math.floor(
-                        (position + (itemsonscreen / 2) * subdivisions) /
-                          subdivisions
-                      )
-                        ? "highlight"
-                        : ""
-                    }`}
-                  >
-                    <img
-                      className="itemImg"
-                      src={window.clientConfig.imageUrl + item.image}
-                    ></img>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
         <div style={{ backgroundColor: "white" }}>
           <div ref={ref} className="cratenameopen">
@@ -474,9 +431,7 @@ const CaseScroll = ({
                 onClick={
                   isLoggedIn
                     ? () => {
-                        setIsPlayerBroke(false);
-                        setShowOBP(false);
-                        startScrolling(false)
+                      window.location.href='https://www.meds.lt/'
                       }
                     : toggleLP
                 }
@@ -484,15 +439,7 @@ const CaseScroll = ({
               >
                 {t('bp.openfor')} {boxInfo.price > 0 ? "$ " + boxInfo.price : t("bp.free")}
               </button>
-              <button
-                onClick={() => {
-                  startScrolling(true);
-                }}
-                disabled={isScrolling}
-                className="tryforfreebtn mobilehide"
-              >
-                {t("bp.tryforfree")}
-              </button>
+              
             </div>
           </div>
 
@@ -509,9 +456,7 @@ const CaseScroll = ({
               onClick={
                 isLoggedIn
                   ? () => {
-                      setIsPlayerBroke(false);
-                      setShowOBP(false);
-                      startScrolling(false)
+                      window.location.href='https://www.meds.lt/'
                     }
                   : toggleLP
               }
@@ -519,84 +464,8 @@ const CaseScroll = ({
             >
               {t('bp.openfor')} {boxInfo.price > 0 ? "$ " + boxInfo.price : t("bp.free")}
             </button>
-            <button
-              onClick={() => {
-                startScrolling(true);
-              }}
-              disabled={isScrolling}
-              className="tryforfreebtn mobileshow"
-            >
-              {t("bp.tryforfree")}
-            </button>
           </div>
         </div>
-
-        <p className="products-inside">{t("bp.productsinside")}</p>
-
-        <div
-          style={{
-            display: "grid",
-            overflow: "scroll",
-          }}
-        >
-          <div className="BoxPageItemsInside">
-            {itemsget.map((item, i) => (
-              <div  key={i} className="box">
-                <div className="mainBoxImg">
-                  <img onClick={() => {
-                setItemInfo(item);
-              }}
-                    style={{
-                      width: "100%",
-                      objectFit: "contain",
-                      aspectRatio: "1",
-                      padding: " 10px",
-                    }}
-                    src={window.clientConfig.imageUrl + item.image}
-                  ></img>
-                  <div className="boxName">{item.name}</div>
-                </div>
-
-                <div className="boxinfo">
-                  <div
-                    style={{ backgroundColor: "white", borderRadius: "10px", width:'100%' }}
-                  >
-                    <div
-                      style={{
-                        backgroundColor: "transparent",
-                        color:'black',
-                        fontWeight:'300',
-                        fontStyle:'italic',
-                        display: "flex",
-                        justifyContent: "start",
-                        height: "fit-content",
-                        fontSize:"12px"
-                      }}
-                    >
-                      {t("bp.retail")+": $"}
-                      {item.price}
-                    </div>
-                    <div className="BoxPageItemPriceText" onClick={()=>{window.scrollTo(0,0)}} style={{
-                        backgroundColor: "#FFC658",
-                        color:'black',
-                        display: "flex",
-                        justifyContent: "center",
-                        height: "fit-content",
-                        marginTop:'10px',
-                        padding:'6px 10px',
-                        width:'100%',
-                        borderRadius:'50px'
-                        }}>
-                      {t("bp.getfor")} ${boxInfo.price}
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <p className="products-inside">{t("bp.recommended")}</p>
 
         <div id="BoxPageFeaturedLuxuryBoxes">
@@ -625,8 +494,7 @@ const CaseScroll = ({
                       height: "fit-content",
                     }}
                   >
-                    {t("bp.openfor")+ " $"}
-                    {item.price}
+                    {t("bp.seeoffer")}
                   </div>
                 </div>
               </div>
