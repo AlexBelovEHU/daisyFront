@@ -38,7 +38,7 @@ const Main = ({
                 <div onClick={showLogin} style={{ backgroundColor: '#03b7ff', borderRadius: '50px', display: 'flex', fontSize: '16px', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: 'white' }}>{t("main.startanboxing")}</div>
                 <div onClick={() => howItWorksRef.current.scrollIntoView()} style={{ backgroundColor: 'transparent', fontSize: '16px', borderRadius: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '250px', height: '45px', margin: '2vw 2vw', color: '#03b7ff', border: '1px solid #03b7ff' }}>{t('main.howitworks')}</div>
               </>) : (<>
-                <div className={styles.addCredit} onClick={showDP} style={{ backgroundColor: '#03b7ff', borderRadius: '50px', textAlign: 'center', padding: '1vw 10vw', margin: '2vw 2vw', color: 'white' }}>{t("main.addcredits")}</div>
+    
               </>)}
 
           </div>
