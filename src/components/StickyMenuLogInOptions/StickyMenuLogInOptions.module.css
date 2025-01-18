@@ -1,0 +1,53 @@
+.stickymenu {
+    position:fixed;
+    border-radius: 10px;
+    top: 90%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3E28E8;
+    padding: 10pt 10pt 3pt 10pt;
+    z-index: 1000;
+  }
+#signuptoday{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#options{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tandc{
+    text-align: center;
+    font-size: small;
+    margin: 0px;
+}
+#signupgooglebutton{
+    padding: 0;
+    padding-top: 4px;
+    border: none;
+    background-color: transparent;
+}
+#signupbutton{
+    background-color: #FFC658;
+}
+#loginbutton,#signupbutton{
+    width: 113px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+}
+@media only screen and (max-width: 800px) {
+    .stickymenu{
+        width: 100%;
+        border-radius: 0px;
+    }
+    #options > button{
+        width: 100%;
+        padding: 0;
+    }
+    #signupgooglebutton {
+        height: 42px;
+    }
+  }

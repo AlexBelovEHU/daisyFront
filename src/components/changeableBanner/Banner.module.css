@@ -1,0 +1,122 @@
+.banner {
+  border-radius: 5px;
+  width: 79vw;
+}
+
+.bannerText {
+  width: 85vw;
+  left : 1vw!important;
+  line-height: normal;
+ 
+}
+
+
+.header{
+  padding: 20px 0;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: black;
+  text-transform: none;  
+  line-height: normal;
+  width: 85vw;
+  margin: 0;
+}
+.paragraph{
+  color: black;
+  font-size: 2.5vw;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.1vw;
+}
+
+.animated {
+  opacity: 0;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+.switchBannerButton{
+  position: absolute;
+   top: 50%;
+   right: 0%;
+   transform: translate(-0%,-50%);
+}
+
+#indicatorContainer{
+  display: none !important; 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+.indicator{
+  border-radius: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+#unselected{
+  background-color: white;
+}
+#selected{
+  background-color: #3E28E8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .banner {
+    padding-right: 0px;
+    border-radius: 0px; 
+    width:100%;
+  }
+  .bannercontainer{
+    position: relative;
+    width: 100vw;
+    padding: 0px;
+  }  
+  .slide-container {
+    display: block;
+  }
+  
+  .slide {
+    width: 100vw; 
+    margin: 0 auto; 
+  }
+  .bannerText {
+    font-size: 17x;
+    width: 80vw;
+    left : 1vw!important;
+  }
+  .header {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;  
+    line-height: normal;
+    width: 85vw;
+    padding-bottom: 5px;
+  }
+  .paragraph {
+    font-size: 17px;
+    width: 68vw;
+    left : 1vw!important;
+    line-height: normal;
+  }
+  #indicatorContainer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+  .indicator{
+    border-radius: 200px;
+    margin: 20px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,211 @@
+.popup {
+  z-index: 3000 !important;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div{
+  font-stretch: normal;
+}
+.toggle-password-button {
+  position: absolute;
+}
+
+.submit-button {
+  height: 50px;
+  display: block;
+  background-color: rgb(62, 40, 232);
+  color: white;
+  width: 97%;
+  border: none;
+  border-radius: 50px;
+  margin-top:40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.choose-login-signup {
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-head {
+  display: block;
+  background-color: white;
+  text-align: center;
+}
+
+.popup-inner {
+  width:340px;
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  outline-width: 3px;
+  outline-color: black;
+  border-color: black;
+}
+
+.login-other-options {
+  border: 1px solid gray;
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 0px;
+  border-radius: 50px;
+  margin: 5px 5px 20px 5px;
+  padding: 8px;
+  text-align: center;
+}
+
+.login-option {
+  background-color: transparent;
+  width: auto;
+  display: inline;
+  position: relative;
+  text-align: center;
+  margin: 5px;
+  padding: 0px;
+  border: none;
+}
+.email-input,
+.password-input,
+.username-input {
+  margin: 4px ;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 50px;
+  border:none;
+}
+
+.password-input {
+  margin-bottom: 0px;
+}
+
+.remember-me-input {
+  padding-left: 1px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer {
+  margin: 0 px 20px 20px;
+  display: block;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #60636a;
+  color: #000000;
+  border-color: #60636a;
+  box-shadow: none;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #60636a;
+  color: #000000;
+  outline: none !important ;
+}
+
+input:active,
+select:active {
+  color: #000000;
+}
+
+::placeholder {
+  color: rgb(157, 163, 174);
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+p,
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: grey;
+}
+
+a {
+  color: rgb(62, 40, 232);
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.c1 {
+  color: black;
+}
+.c0 {
+  color: black;
+  font-weight: bold;
+}
+p,
+h1,
+h2,
+img,
+button {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin: 0px;
+  }
+  .login-other-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-option img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}

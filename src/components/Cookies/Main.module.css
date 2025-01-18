@@ -1,0 +1,121 @@
+.container {
+  background-color: #EFEFEE;
+  display: flex;
+  margin: 0;
+  padding: 1vw 0vw 1vw 1vw;
+  flex-wrap: wrap;
+}
+
+.bottom {
+  width: 100%;
+}
+.description{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  color: black;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.leftbody {
+  background-color: white;
+  padding: 1vw;
+  width: 70%;
+  margin: 0px 3%;
+}
+
+.box {
+  width: 30%;
+  display: inline-block;
+  background-color: white;
+  margin: 1% 1% 1% 1%;
+}
+
+.fatheader {
+  margin: 2% 0;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 3vh;
+}
+
+.exactlyhowitworks {
+  width: 33%;
+}
+
+#featuredluxuryboxes {
+  display: inline-block;
+}
+
+#showmorebutton {
+  align-self: center;
+  background-color: #3E28E8;
+  width: 100%;
+  margin: 10px 10px 0px 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#howitworks {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .leftbody{
+    width: 100%;
+  }
+  .box {
+    width: 47%;
+    display: inline-block;
+    background-color: white;
+    margin: 1% 1% 1% 1%;
+  }
+}
+.hiwinner{
+  display: flex;
+  alignItems: center;
+  justifyContent: center
+}
+.hiwtext{
+  font-size: 2vw;
+  color: black;
+}
+.hiwimage{
+  width: 20%;
+}
+.hiwheader{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  color: black;
+  padding: 0px 10px;
+}
+@media only screen and (max-width: 650px) {
+  .fatheader{
+    font-size: 3vh;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #howitworks{
+    border-radius: 0px;
+    margin: 3%;
+  }
+  .hiwinner{
+    display: block;
+  }
+  .exactlyhowitworks {
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+  
+  .hiwimage{
+    width: 20%;
+  }
+}

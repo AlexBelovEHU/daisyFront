@@ -1,0 +1,118 @@
+.stickymenu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #EFEFEE;
+    padding-left: 10px;
+    z-index: 1000;
+}
+.anboxlogo{
+    display: block;
+}
+.boxlogo{
+    display: none;
+}
+.stickymenutop {
+    display: flex;
+    justify-content: start;
+}
+
+.containedImg{
+    height: 100%;
+    object-fit: contain;
+}
+.rightside {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.leftside {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.stickymenuitem {
+    margin: 10px;
+    height: auto;
+}
+
+#login {
+height: 35px;
+width:140px;
+    background-color: transparent;
+    border: 1px solid #3E28E8;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: #3E28E8;
+    border-radius: 50px;
+}
+#signup {
+    height: 35px;
+    width:140px;
+        background-color: #3E28E8;
+        border:2px solid #3E28E8;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        color: white;
+        border-radius: 50px;
+    }
+
+#bonus{
+    width: 46px;
+    height: 46px;
+}
+#headimage{
+    width: 35px;
+    height: 35px;
+}
+
+#depositedamountview {
+    height: 35px;   
+    position: relative;
+    padding: 0%;
+    padding-left: 10px;
+    background-color: white;
+    color: black;
+    display: flex;
+    border-radius: 50px;
+    justify-content: right;
+    align-items: center;
+}
+#faq{
+    text-decoration: none;
+    color: gray;
+}
+@media only screen and (max-width: 500px) {
+    #faq {
+      display: none;
+    }
+    .stickymenuitem {
+        height: auto;
+    }
+    .stickymenuitem{
+        margin: 10px 5px;
+    }    .boxlogo{
+        display: block;
+    }
+    .anboxlogo{
+        display: none;
+    }
+  }
+#plus{
+    background-color: #3E28E8;
+    border-radius: 50px;
+    color:white;
+    font-size:23px;
+    width:33px;
+    height: 33px;
+    text-align: center;
+    font-weight: 400;
+    margin-left:10px;
+}

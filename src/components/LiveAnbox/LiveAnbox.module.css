@@ -1,0 +1,67 @@
+.rightbody {
+  overflow: hidden;
+  width: 14%;
+  max-height: 100vh;
+  position: sticky;
+  top:90px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 5px;
+  text-align: center;
+}
+.liveunbox {
+  display: flex;
+  flex-direction: column;
+
+}
+.livePrice{
+  text-align: center; 
+  background-color: white;
+  border-radius: 10px;
+  color:black;
+  width: fit-content;
+  padding:  5px 10px;
+  margin: 5px;
+}
+.liveName{
+  text-align: left;
+  background-color: transparent;
+  border-radius: 10px;
+  color:black;
+  width: 50%;
+  position: absolute;
+  bottom:5px;
+  left:5px
+}
+.liveprize{
+  aspect-ratio: 1;
+  padding: 5px;
+  width: inherit;
+  object-fit: contain;
+}
+.prizeContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  margin:1vw 0;
+  width: 100%;
+}
+.container{
+  max-height: 100vh;
+  
+}
+.fatheader {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin: 10px 0px;
+  color: black;
+}
+@media only screen and (max-width: 800px) {
+  .rightbody{display: none;
+  }
+}

@@ -1,0 +1,63 @@
+.stickymenu {
+  
+    position:fixed;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px 15px 25px 15px;
+    z-index: 1000;
+    text-align: center;
+  }
+  #confirm{
+    background-color: #3E28E8;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    padding:  10px 70px;
+    font-size: 20px;
+  }  
+  #cancel{
+    background-color: #EFEFEE;
+    border: none;
+    color:black;
+    border-radius: 5px;
+    padding:  10px 70px;
+    font-size: 20px;
+  }
+  #Boxis{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 600px) {
+    .stickymenu {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    #confirm, #cancel {
+      font-size: 1em;
+      margin: 5px;
+    }
+    #cancel {
+      padding: 10px 0px;
+      width: 33%;
+      font-size: 1em;
+      margin: 5px;
+    }
+    
+    #confirm {
+      padding: 10px 0px;
+      width: 66%;
+      font-size: 1em;
+      margin: 5px;
+    }
+  
+    #Boxis {
+      font-size: 1.2em;
+    }
+  }

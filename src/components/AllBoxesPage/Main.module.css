@@ -1,0 +1,215 @@
+.container {
+  display: flex;
+  margin: 0;
+  padding: 1vw 0vw 1vw 1vw;
+  flex-wrap: wrap;
+}
+html {
+  scroll-behavior: smooth;
+}
+.bottom {
+  padding: 10px;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.leftbody {
+  padding: 0px;
+  width:80vw;
+  margin: 0px 1%;
+}
+
+.box {
+  position: relative;
+  width: 30%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  margin: 1% 1% 1% 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ .mainBoxImg {
+  position: relative;
+ }
+
+ .boxName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  color: black;
+  padding: 10px 20px; 
+} 
+
+.boxinfo{
+ display: flex;
+ flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.fatheader {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+.exactlyhowitworks {
+  margin: 30px 0;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center ;
+}
+
+
+.hiwbottom{
+  margin-top: 35px;
+  width: 35%;
+}
+
+.eehiw{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#featuredluxuryboxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+} 
+#showmorebutton {
+  margin: 10px 10px 0px 10px;
+  background-color: #3E28E8;
+  padding: 1vw 10vw;
+  border:none;
+  color: white;
+  border-radius: 50px;
+}
+
+#howitworks {
+  height: 100%;
+  background-color: white;
+  padding: 20px 20px 80px 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.infobutton{
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 800px) {
+  .leftbody{
+    width: 100%;
+  }
+  .box {
+    width: 47%;
+    display: inline-block;
+    background-color: white;
+    margin: 1% 1% 1% 1%;
+  }
+}
+.hiwinner{
+  display: flex;
+  justify-content: space-around
+}
+
+.hiwtext{
+  font-size: 13px;
+  color: black;
+}
+.hiwimage{
+  width: 20%;
+}
+.hiwheader{
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  padding: 0px 10px 10px;
+}
+@media only screen and (max-width: 800px) {
+  .addCredit,#showmorebutton{
+    width:280px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #howitworks{
+    margin: 3%;
+  }
+  .hiwinner{
+    display: block;
+  }
+  .exactlyhowitworks {
+    width: 100%;
+    display: flex;
+    align-items: start;
+  }
+  
+  .hiwimage{
+    width: 20%;
+  }
+  .infobutton{
+    width: 15px;
+    height: 15px;
+  }
+  .fatheader{
+    font-size: 18px;
+    text-align: center ;
+  }
+  .leftbody{
+    margin: 0 auto;
+  }
+  #showmorebutton {
+    align-items: center;
+    margin: 10px 10px 0px 0px;
+  }
+  .container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .hiwbottom{
+    width: 100%;
+  }
+  #howitworks{
+    margin: 0;
+    padding: 0px 10px 30px 10px;
+  }
+  .hiwheader {
+    font-weight: 600;
+  }
+  .hiwtext {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .boxName {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .boxinfo {
+    padding: 0 10px 10px 10px;
+  }
+  .exactlyhowitworks {
+    flex-direction:row;
+    justify-content: start;
+    align-items: start;
+  }
+  .eehiw{
+    align-items: start;
+  }
+}

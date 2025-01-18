@@ -1,0 +1,155 @@
+.footerContainer{
+  position: relative;
+  background-color: #d9d9d9;
+  display: block;
+}
+.footer {
+  position: relative;
+  padding: 40px;
+  background-color: #d9d9d9;
+  display: flex;
+}
+.faMobileBox {
+  display: none;
+}
+.fa {
+  color: black;
+  text-decoration: none;
+  margin: 0.5vh;
+  font-stretch: ultra-expanded;
+}
+.hint {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: light;
+  padding:20px 0px;
+}
+#leftfooter {
+  width: 50%;
+  padding-right: 10%;
+}
+#rightfooter {
+  width: 50%;
+}
+.contact {
+  text-align: center;
+  font-size: 1.5vw;
+  margin: 30px 0 5px 0;
+} 
+.emailInput,
+.textInput {
+  margin: 20px 0px;
+  width: 100%;
+}
+.emailInput > input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+}
+.languageIcon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 13.5px;
+}
+.textInput > textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  resize: none;
+}
+.emailInput > input:focus , .textInput > textarea:focus {
+  outline: none;
+  border: none;
+}
+.submitbtn {
+  width: 100%;
+  margin: 0px;
+  display: block;
+  background-color: rgb(62, 40, 232);
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+#textAtTheBottomFooter{
+  text-align: center;
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  #textAtTheBottomFooter{
+    text-align: center;
+    font-size: 10px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #rightfooter,
+  #leftfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+  }
+  .textInput {
+    width: auto;
+  }
+  .faDesktop {
+    display: none !important;
+  }
+  .faMobileBox {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    gap: 10px;
+  }
+  .fa {
+    padding: 0;
+    font-size: 17px;
+    line-height: normal;
+  }
+
+  .hint {
+    font-size: 3vw;
+  }
+  .emailInput,
+  .textInput {
+    margin: 20px 0px;
+    width: 100%;
+    padding: 0;
+  }
+  .emailInput > input,
+  .textInput > input {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .anboxmelogo {
+    width: 50%;
+    padding-top: 20px;
+  }
+  .hint {
+    font-size: 17px;
+  }
+  .contact {
+    font-size: 18px;
+    margin: 10px 0 5px 0 !important;
+    font-weight: bold;
+  }
+  .emailInput {
+    margin: 0;
+  }
+  .emailInput > input {
+    margin: 0;
+  }
+  .submitbtn {
+    width: 100%;
+  }
+}
